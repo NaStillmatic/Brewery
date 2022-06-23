@@ -25,7 +25,7 @@ class BeerDetailViewControoller: UITableViewController {
     let imageURL = URL(string: beer?.imageURL ?? "")
     
     headerView.contentMode = .scaleAspectFit
-    headerView.kf.setImage(with: imageURL, placeholder: nil)
+    headerView.kf.setImage(with: imageURL, placeholder: #imageLiteral(resourceName: "beer_icon"))
     tableView.tableHeaderView = headerView
   }
 }
